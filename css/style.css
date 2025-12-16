@@ -1,39 +1,65 @@
-/* Bio text container (keeps full paragraph without page scrolling) */
-.bio-text {
-  max-height: 220px;
-  overflow-y: auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
   line-height: 1.6;
-  margin-top: 0.5rem;
-  padding-right: 10px;
-  font-size: 0.95rem;
 }
 
-/* Subtle scrollbar styling */
-.bio-text::-webkit-scrollbar {
-  width: 6px;
+header, main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.bio-text::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
-}
-/* Bio text container (keeps full paragraph without page scrolling) */
-.bio-text {
-  max-height: 220px;
-  overflow-y: auto;
-  line-height: 1.6;
-  margin-top: 0.5rem;
-  padding-right: 10px;
-  font-size: 0.95rem;
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Subtle scrollbar styling */
-.bio-text::-webkit-scrollbar {
-  width: 6px;
+.hero h1 {
+  font-size: 3rem;
 }
 
-.bio-text::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
+.tagline {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #555;
 }
 
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
