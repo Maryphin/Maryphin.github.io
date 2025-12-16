@@ -1,113 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Bio text container (keeps full paragraph without page scrolling) */
+.bio-text {
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  padding-right: 10px;
+  font-size: 0.95rem;
 }
 
-body {
-  background: linear-gradient(135deg, #f5f7fa, #e4e9f0);
-  color: #333;
-  line-height: 1.7;
+/* Subtle scrollbar styling */
+.bio-text::-webkit-scrollbar {
+  width: 6px;
 }
 
-/* Layout */
-header, main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* Hero section */
-.hero {
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  letter-spacing: 1px;
-}
-
-.tagline {
-  margin: 1rem 0 1.5rem;
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Navigation */
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  margin: 0 12px;
-  padding: 8px 14px;
-  text-decoration: none;
-  color: #0066cc;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-nav a:hover {
-  background-color: rgba(0, 102, 204, 0.1);
-}
-
-/* Main content cards */
-main {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  margin-bottom: 3rem;
-}
-
-main h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
-main p {
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-/* Portfolio cards */
-.portfolio-item {
-  background: #f9fafc;
-  padding: 1.2rem;
-  margin-bottom: 1.2rem;
+.bio-text::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
   border-radius: 10px;
-  border-left: 4px solid #0066cc;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Bio text container (keeps full paragraph without page scrolling) */
+.bio-text {
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  padding-right: 10px;
+  font-size: 0.95rem;
 }
 
-.portfolio-item h2 {
-  margin-bottom: 0.4rem;
+/* Subtle scrollbar styling */
+.bio-text::-webkit-scrollbar {
+  width: 6px;
 }
 
-.portfolio-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+.bio-text::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
 }
 
-/* Mobile friendly */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  header, main {
-    padding: 1.5rem;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 6px;
-  }
-}
