@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,21 +6,22 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Body */
+/* ================= BODY ================= */
 body {
-  background: linear-gradient(135deg, #f5f7fa, #e4e9f0);
-  color: #333;
+  background: linear-gradient(135deg, #1e1f26, #2a2b32);
+  color: #e6e6e6;
   line-height: 1.7;
 }
 
-/* Layout */
-header, main {
+/* ================= LAYOUT ================= */
+header,
+main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 .hero {
   min-height: 60vh;
   display: flex;
@@ -32,15 +33,16 @@ header, main {
 
 .hero h1 {
   font-size: 2.8rem;
+  color: #ffffff;
 }
 
 .tagline {
   margin: 1rem 0 1.5rem;
   font-size: 1.2rem;
-  color: #555;
+  color: #cfcfcf;
 }
 
-/* Navigation */
+/* ================= NAVIGATION ================= */
 nav {
   margin-top: 1rem;
 }
@@ -49,30 +51,36 @@ nav a {
   margin: 0 12px;
   padding: 8px 14px;
   text-decoration: none;
-  color: #0066cc;
+  color: #4da3ff;
   font-weight: 600;
   border-radius: 6px;
   transition: background 0.3s ease;
 }
 
 nav a:hover {
-  background-color: rgba(0, 102, 204, 0.12);
+  background-color: rgba(77, 163, 255, 0.15);
 }
 
-/* Main Card */
+/* ================= MAIN CARD ================= */
 main {
-  background-color: #ffffff;
+  background-color: #2f313a;
   border-radius: 14px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
   margin-bottom: 3rem;
 }
 
 main h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: #ffffff;
 }
 
-/* ===== BIO LAYOUT ===== */
+main p {
+  color: #d1d1d1;
+  margin-bottom: 1rem;
+}
+
+/* ================= BIO LAYOUT ================= */
 .bio-container {
   display: flex;
   align-items: flex-start;
@@ -80,24 +88,19 @@ main h1 {
   flex-wrap: wrap;
 }
 
+/* ================= PROFILE PHOTO ================= */
 .profile-photo,
 .profile-photo-home {
-  width: 135px;
-  height: 135px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  object-position: center;   
+  object-position: 50% 30%;
   border-radius: 50%;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
   flex-shrink: 0;
 }
 
-/* Bio text */
-.bio-text p {
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-/* ===== PORTFOLIO ===== */
+/* ================= PORTFOLIO ================= */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -105,31 +108,36 @@ main h1 {
 }
 
 .portfolio-item {
-  background: #f9fafc;
+  background: #3a3c46;
   padding: 1.4rem;
   border-radius: 12px;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid #4da3ff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-item h2 {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.portfolio-item p {
+  color: #dcdcdc;
 }
 
 .portfolio-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6);
 }
 
-/* ===== VIDEO ===== */
+/* ================= VIDEO ================= */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 .video-container iframe {
@@ -140,13 +148,14 @@ main h1 {
   height: 100%;
 }
 
-/* ===== MOBILE ===== */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
   }
 
-  header, main {
+  header,
+  main {
     padding: 1.5rem;
   }
 
