@@ -82,8 +82,8 @@ main h1 {
 
 .profile-photo,
 .profile-photo-home {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   object-position: center;   
   border-radius: 50%;
